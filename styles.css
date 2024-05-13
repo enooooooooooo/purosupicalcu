@@ -1,0 +1,101 @@
+/* styles.css */
+.container {
+  max-width: 600px;
+  margin: 50px auto; /* 上下のマージンを50pxに設定し、中央に配置 */
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+.input-group {
+  margin-bottom: 15px;
+  text-align: center; /* 入力フォームを中央に配置 */
+}
+
+.input-group label {
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+input[type="number"] {
+  width: 50px;
+  margin-right: 5px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 20px;
+  background-color: #ffc107; /* コインの黄色 */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #ffca28; /* ホバー時の色 */
+}
+
+/* 各種ベースカラー */
+#剛力Lv0, #剛力Lv1, #剛力Lv2, #剛力Lv3, #剛力Lv4 {
+  background-color: rgba(255, 82, 82, 0.3); /* 赤 */
+}
+
+#俊敏Lv0, #俊敏Lv1, #俊敏Lv2, #俊敏Lv3, #俊敏Lv4 {
+  background-color: rgba(33, 150, 243, 0.3); /* 青 */
+}
+
+#技巧Lv0, #技巧Lv1, #技巧Lv2, #技巧Lv3, #技巧Lv4 {
+  background-color: rgba(76, 175, 80, 0.3); /* 緑 */
+}
+
+#心Lv0, #心Lv1, #心Lv2, #心Lv3, #心Lv4 {
+  background-color: rgba(233, 30, 99, 0.3); /* ピンク */
+}
+
+#印Lv0, #印Lv1, #印Lv2, #印Lv3, #印Lv4 {
+  background-color: rgba(192, 192, 192, 0.3); /* 銀 */
+}
+
+#output {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  color: #333; /* 結果のテキストカラー */
+  text-align: center; /* 結果を中央に配置 */
+  display: inline-block; /* インラインブロック要素に変更 */
+  width: 100%; /* 横幅を100%に設定 */
+}
+
+.result-table {
+  border-collapse: collapse; /* テーブルのボーダーを重ねる */
+  margin: 0 auto; /* テーブルを中央に配置 */
+}
+
+.result-table th, .result-table td {
+  border: 1px solid #ddd; /* ボーダーを設定 */
+  padding: 8px; /* セルの内側の余白 */
+}
+
+.result-table th {
+  background-color: #f2f2f2; /* ヘッダーの背景色 */
+}
+
+.result-box {
+  display: flex;
+  justify-content: center;
+}

@@ -1,0 +1,54 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>プロスピA 試練アイテム計算サイト</title>
+  
+  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>プロスピA 試練アイテム計算サイト</h1>
+    <form id="itemForm">
+      <div class="input-group">
+        <label for="strength">剛力</label>
+        <input type="number" id="剛力Lv0" placeholder="Lv. 0">
+        <input type="number" id="剛力Lv1" placeholder="Lv. 1">
+        <input type="number" id="剛力Lv2" placeholder="Lv. 2">
+        <input type="number" id="剛力Lv3" placeholder="Lv. 3">
+        <input type="number" id="剛力Lv4" placeholder="Lv. 4">
+      </div>
+      <div class="input-group">
+        <label for="agility">俊敏</label>
+        <input type="number" id="俊敏Lv0" placeholder="Lv. 0">
+        <input type="number" id="俊敏Lv1" placeholder="Lv. 1">
+        <input type="number" id="俊敏Lv2" placeholder="Lv. 2">
+        <input type="number" id="俊敏Lv3" placeholder="Lv. 3">
+        <input type="number" id="俊敏Lv4" placeholder="Lv. 4">
+      </div>
+      <div class="input-group">
+        <label for="agility">技巧</label>
+        <input type="number" id="技巧Lv0" placeholder="Lv. 0">
+        <input type="number" id="技巧Lv1" placeholder="Lv. 1">
+        <input type="number" id="技巧Lv2" placeholder="Lv. 2">
+        <input type="number" id="技巧Lv3" placeholder="Lv. 3">
+        <input type="number" id="技巧Lv4" placeholder="Lv. 4">
+      </div>
+      <div class="input-group">
+        <label for="mind">心</label>
+        <input type="number" id="心Lv0" placeholder="Lv. 0">
+        <input type="number" id="心Lv1" placeholder="Lv. 1">
+        <input type="number" id="心Lv2" placeholder="Lv. 2">
+        <input type="number" id="心Lv3" placeholder="Lv. 3">
+        <input type="number" id="心Lv4" placeholder="Lv. 4">
+      </div>
+      <button type="button" onclick="calculateItems()">生成する</button>
+    </form>
+    <div id="output"></div>
+  </div>
+  
+  <script src="<?php echo get_template_directory_uri(); ?>/script.js"></script>
+</body>
+</html>
